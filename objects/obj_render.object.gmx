@@ -34,8 +34,6 @@ scaling = -1;
 view_wview = window_width();
 view_hview = window_height();
 window_set_size(view_wview, view_hview);
-
-
 </string>
           </argument>
         </arguments>

@@ -91,9 +91,10 @@ draw_set_font(font_add_sprite(spr_font_nes, ord(" "), 1, 2))
           <argument>
             <kind>1</kind>
             <string>/// Create node initial
-node[0] = instance_create(obj_node.x, obj_node.y,   obj_block_start);
-node[1] = instance_create(obj_node.x, obj_node.y*4, obj_block);
-node[2] = instance_create(obj_node.x, obj_node.y*7, obj_block_end);
+var i=0;
+node[0] = instance_create(obj_node.x, obj_node.y+(i*64)+(i++*32), obj_block_start);
+node[1] = instance_create(obj_node.x, obj_node.y+(i*64)+(i++*32), obj_block);
+node[2] = instance_create(obj_node.x, obj_node.y+(i*64)+(i++*32), obj_block_end);
 
 var l = string_length(string(node[0]))
 GM_NODE_ID_INIT = power(10, l-1);
