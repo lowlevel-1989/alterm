@@ -2,7 +2,7 @@
 <object>
   <spriteName>spr_control_gui</spriteName>
   <solid>0</solid>
-  <visible>-1</visible>
+  <visible>0</visible>
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
@@ -26,11 +26,13 @@
           <argument>
             <kind>1</kind>
             <string>/// Var Control
-ALIGN_LEFT    = -1;
-ALIGN_NONE    =  0;
-ALIGN_RIGHT   =  1;
-ALIGN_CENTER  =  2;
-ALIGN_BOTTOM  =  3;
+var i = 0;
+ALIGN_NONE    = 0;
+ALIGN_LEFT    = 1 &lt;&lt; i++;
+ALIGN_RIGHT   = 1 &lt;&lt; i++;
+ALIGN_CENTER  = 1 &lt;&lt; i++;
+ALIGN_BOTTOM  = 1 &lt;&lt; i++;
+
 // Set in the ROOM
 align = ALIGN_LEFT;
 responsive_object[0] = noone;
@@ -57,8 +59,8 @@ responsive_object[0] = noone;
           <argument>
             <kind>1</kind>
             <string>/// Move GUI In room
-if (align == ALIGN_RIGHT) x = window_get_width() - sprite_width;
-if (align == ALIGN_BOTTOM) y = window_get_height() - sprite_height;
+if (align &amp; ALIGN_RIGHT)  x = window_get_width() - sprite_width;
+if (align &amp; ALIGN_BOTTOM) y = window_get_height() - sprite_height;
 
 // responsive_object[] set in room
 if (variable_instance_exists(self, "responsive_object")) {

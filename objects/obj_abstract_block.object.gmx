@@ -32,15 +32,13 @@ image_speed = 0;
 
 // new var instance
 is_node = 0;
-active = 0;
-index = 0;
+active  = 0;
+index   = 0;
+xgui    = x - view_xview;
+ygui    = y - view_yview;
 
 // flag create event btn
 btn_created = 0;
-
-// gui view
-xgui = x - view_xview;
-ygui = y - view_yview;
 
 </string>
           </argument>
@@ -69,7 +67,7 @@ ygui = y - view_yview;
 // visible ON/OFF
 visible = is_node;
 
-// update xgui/ygui
+// update x/y in gui
 xgui = x - view_xview;
 ygui = y - view_yview;
 

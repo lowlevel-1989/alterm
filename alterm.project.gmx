@@ -8,7 +8,6 @@
   <sprites name="sprites">
     <sprite>sprites\spr_control</sprite>
     <sprite>sprites\spr_node</sprite>
-    <sprite>sprites\spr_gui_menu_block</sprite>
     <sprite>sprites\spr_font_nes</sprite>
     <sprites name="block">
       <sprite>sprites\spr_block</sprite>
@@ -28,6 +27,7 @@
     </sprites>
     <sprite>sprites\spr_render</sprite>
     <sprite>sprites\spr_control_gui</sprite>
+    <sprite>sprites\spr_output</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -44,11 +44,17 @@
       <script>scripts\window_width.gml</script>
       <script>scripts\window_height.gml</script>
     </scripts>
+    <scripts name="string">
+      <script>scripts\string_wordwrap_width.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_control</object>
+    <object>objects\obj_render</object>
+    <object>objects\obj_control_gui</object>
     <object>objects\obj_node</object>
     <object>objects\obj_menu_block</object>
+    <object>objects\obj_output</object>
     <objects name="abstract">
       <object>objects\obj_abstract_block</object>
       <object>objects\obj_abstract_btn</object>
@@ -72,8 +78,6 @@
     <objects name="node_btn">
       <object>objects\obj_node_btn_delete</object>
     </objects>
-    <object>objects\obj_render</object>
-    <object>objects\obj_control_gui</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
