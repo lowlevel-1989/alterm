@@ -255,7 +255,7 @@
     <option_html5_scale>-1</option_html5_scale>
     <option_html5_showcursor>True</option_html5_showcursor>
     <option_html5_splash_png>Configs\Default\html5\splash.png</option_html5_splash_png>
-    <option_html5_texture_page>256</option_html5_texture_page>
+    <option_html5_texture_page>512</option_html5_texture_page>
     <option_html5_use_test_ads>0</option_html5_use_test_ads>
     <option_html5_usebuiltinparticles>False</option_html5_usebuiltinparticles>
     <option_html5_usesplash>False</option_html5_usesplash>
@@ -357,7 +357,7 @@
     <option_linux_splash_png>Configs\Default\linux\splash.png</option_linux_splash_png>
     <option_linux_steam_app_id>0</option_linux_steam_app_id>
     <option_linux_sync>0</option_linux_sync>
-    <option_linux_texture_page>256</option_linux_texture_page>
+    <option_linux_texture_page>512</option_linux_texture_page>
     <option_linux_version_build>0</option_linux_version_build>
     <option_linux_version_major>1</option_linux_version_major>
     <option_linux_version_minor>0</option_linux_version_minor>
@@ -589,7 +589,7 @@
     <option_windows_splash_background_colour>#000000</option_windows_splash_background_colour>
     <option_windows_splash_screen>Configs\Default\windows\splash.png</option_windows_splash_screen>
     <option_windows_steam_app_id>0</option_windows_steam_app_id>
-    <option_windows_texture_page>256</option_windows_texture_page>
+    <option_windows_texture_page>512</option_windows_texture_page>
     <option_windows_use_splash>-1</option_windows_use_splash>
     <option_windows_vertex_buffer_method2>0</option_windows_vertex_buffer_method2>
     <option_winphone_480_splash_image>Configs\Default\WinPhone\SplashScreenImage480.jpg</option_winphone_480_splash_image>
