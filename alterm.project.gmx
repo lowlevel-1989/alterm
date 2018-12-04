@@ -3,23 +3,57 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
+  <datafiles number="2" name="datafiles">
+    <datafiles number="2" name="licenses">
+      <datafile>
+        <name>UBUNTU FONT LICENCE.txt</name>
+        <exists>-1</exists>
+        <size>4672</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>9223372036854775807</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>UBUNTU FONT LICENCE.txt</filename>
+      </datafile>
+    </datafiles>
+    <datafiles number="2" name="fonts">
+      <datafile>
+        <name>UbuntuMono-R.ttf</name>
+        <exists>-1</exists>
+        <size>205748</size>
+        <exportAction>2</exportAction>
+        <exportDir></exportDir>
+        <overwrite>0</overwrite>
+        <freeData>-1</freeData>
+        <removeEnd>0</removeEnd>
+        <store>0</store>
+        <ConfigOptions>
+          <Config name="Default">
+            <CopyToMask>105553895358670</CopyToMask>
+          </Config>
+        </ConfigOptions>
+        <filename>UbuntuMono-R.ttf</filename>
+      </datafile>
+    </datafiles>
+  </datafiles>
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_control</sprite>
     <sprite>sprites\spr_node</sprite>
-    <sprite>sprites\spr_font_nes</sprite>
     <sprites name="block">
       <sprite>sprites\spr_block</sprite>
       <sprite>sprites\spr_block_select</sprite>
-      <sprite>sprites\spr_block_led_blue</sprite>
-    </sprites>
-    <sprites name="led">
-      <sprite>sprites\spr_led_blue</sprite>
     </sprites>
     <sprites name="control_btn">
       <sprite>sprites\spr_engine_btn_play</sprite>
-      <sprite>sprites\spr_engine_btn_pause</sprite>
       <sprite>sprites\spr_engine_btn_stop</sprite>
     </sprites>
     <sprites name="node_btn">
@@ -48,9 +82,13 @@
       <script>scripts\string_wordwrap_width.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_main_html5</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_control</object>
     <object>objects\obj_render</object>
+    <object>objects\obj_engine</object>
     <object>objects\obj_control_gui</object>
     <object>objects\obj_node</object>
     <object>objects\obj_menu_block</object>
@@ -58,7 +96,6 @@
     <objects name="abstract">
       <object>objects\obj_abstract_block</object>
       <object>objects\obj_abstract_btn</object>
-      <object>objects\obj_abstract_led</object>
       <object>objects\obj_abstract_node_btn</object>
     </objects>
     <objects name="control_btn">
@@ -70,10 +107,7 @@
       <object>objects\obj_block_start</object>
       <object>objects\obj_block</object>
       <object>objects\obj_block_end</object>
-      <object>objects\obj_block_led_blue</object>
-    </objects>
-    <objects name="led">
-      <object>objects\obj_led_blue</object>
+      <object>objects\obj_block_print</object>
     </objects>
     <objects name="node_btn">
       <object>objects\obj_node_btn_delete</object>

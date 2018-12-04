@@ -69,7 +69,13 @@
 drag_block = 0;
 drag_active = 1;
 
-draw_set_font(font_add_sprite(spr_font_nes, ord(" "), 1, 2))
+var fnt_main = -1;
+if (os_browser == browser_not_a_browser)
+    fnt_main = font_add("fonts/UbuntuMono-R.ttf", 16, false, false, 32, 127);
+else
+    fnt_main = fnt_main_html5;
+
+draw_set_font(fnt_main);
 </string>
           </argument>
         </arguments>
@@ -190,9 +196,9 @@ draw_set_colour(c_white);
           <argument>
             <kind>1</kind>
             <string>/// Draw Node List
-draw_text(0, 0, "GM_NODE_ID_INIT: "+string(GM_NODE_ID_INIT));
+draw_text(0, -2, "GM_NODE_ID_INIT: "+string(GM_NODE_ID_INIT));
 for (var i=1; i &lt;= array_length_1d(node); i++){
-    draw_text(0, i*16, "node: "+string(node[i-1]-GM_NODE_ID_INIT));
+    draw_text(0, i*18, "node: "+string(node[i-1]-GM_NODE_ID_INIT));
 }
 </string>
           </argument>

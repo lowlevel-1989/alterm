@@ -25,14 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// SET IS NODE DEFAULT
-only_self();
-event_inherited();
+            <string>event_inherited();
 
-action_name = "START";
-btn_created = 1;
-is_node = 1;
-
+action_name = "PRINT";
 </string>
           </argument>
         </arguments>

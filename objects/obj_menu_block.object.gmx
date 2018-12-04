@@ -65,10 +65,14 @@ if (visible &amp;&amp; !obj_control.drag_block) {
             <string>/// Draw Block in menu
 with (obj_abstract_block) {
     if (!visible){
-        draw_sprite(sprite_index, image_index, xgui, ygui);
-        draw_text(xgui, ygui, object_index);
-        draw_text(xgui, ygui-15, string(xgui)+" "+string(ygui));
-        draw_text(xgui, ygui+15, is_node);
+        xprevious = x;
+        yprevious = y;
+    
+        x = xgui;
+        y = ygui;
+        event_perform(ev_draw, 0);
+        x = xprevious;
+        y = yprevious;
     }
 }
 </string>

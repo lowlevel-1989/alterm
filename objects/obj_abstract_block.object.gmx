@@ -36,6 +36,7 @@ active  = 0;
 index   = 0;
 xgui    = x - view_xview;
 ygui    = y - view_yview;
+action_name = "";
 
 // flag create event btn
 btn_created = 0;
@@ -71,7 +72,7 @@ visible = is_node;
 xgui = x - view_xview;
 ygui = y - view_yview;
 
-node_update_index();
+if (is_node) node_update_index();
 
 </string>
           </argument>
@@ -191,9 +192,10 @@ if (position_meeting(mouse_x, mouse_y, self)) {
             <kind>1</kind>
             <string>/// Draw Logic
 draw_self();
-draw_text(x, y, object_index);
-draw_text(x, y+15, index);
-draw_text(x, y+30, is_node);
+draw_text(x, y-6, object_index);
+draw_text(x+((sprite_width-string_width(action_name))/2), y+12, action_name);
+draw_text(x, y+30, index);
+draw_text(x, y+45, is_node);
 </string>
           </argument>
         </arguments>
